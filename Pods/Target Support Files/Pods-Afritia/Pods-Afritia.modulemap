@@ -1,0 +1,6 @@
+framework module Pods_Afritia {
+  umbrella header "Pods-Afritia-umbrella.h"
+
+  export *
+  module * { export * }
+}

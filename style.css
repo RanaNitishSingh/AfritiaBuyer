@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Cairo";
+    font-weight: normal;
+    src: url("Cairo-Regular.ttf")
+}
+@font-face {
+    font-family: "Cairo";
+    font-style: italic;
+    src: url("Cairo-Italic.ttf")
+}
+@font-face {
+    font-family: "Cairo";
+    font-weight: bold;
+    src: url("Cairo-Bold.ttf")
+}
+body {
+    margin: 0px;
+    font-family: "Cairo";
+    font-weight: normal;
+    font-size: 13pt;
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Afritia</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLIconFile</key>
+			<string>ic_shipping</string>
+			<key>CFBundleURLName</key>
+			<string>com.webile.afritia</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>twitterkit-K65tiAQK29wTliMrDn2Fgmm0E</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLIconFile</key>
+			<string>ic_shipping</string>
+			<key>CFBundleURLName</key>
+			<string>com.webile.afritia</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.527911399504-h1sbev12lsnrn9p0tqp68ci1cgbmsrns</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLIconFile</key>
+			<string>ic_shipping</string>
+			<key>CFBundleURLName</key>
+			<string>com.webile.afritia</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb590790841845120</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>afritia.customers</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FacebookAppID</key>
+	<string>590790841845120</string>
+	<key>FacebookDisplayName</key>
+	<string>Afritia</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>twitter</string>
+		<string>twitterauth</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Uses photo for taking profile picture and image detection</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Uses camera for taking profile picture and image detection</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Uses location for getting user current address</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Uses location for getting user current address</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Uses location for getting user current address</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Uses location for getting user current address</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Our application needs permission to write photos</string>
+	<key>NSPhotoLibraryAddUsageDescription - 2</key>
+	<string>Application needs permission to write photos...</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Uses photo for taking profile picture and image detection</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Cairo-Bold.ttf</string>
+		<string>Cairo-Italic.ttf</string>
+		<string>Cairo-Regular.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+</dict>
+</plist>
