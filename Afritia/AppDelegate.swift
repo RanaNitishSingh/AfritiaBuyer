@@ -329,6 +329,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    func resetApp() {
+        UIApplication.shared.windows[0].rootViewController = UIStoryboard(
+            name: "Main",
+            bundle: nil
+            ).instantiateInitialViewController()
+    }
+
+    
+    
 }
 
 //MARK:- Push in Foreground

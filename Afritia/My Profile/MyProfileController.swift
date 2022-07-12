@@ -11,21 +11,7 @@ import Alamofire
 import SwiftMessages
 import CropViewController
 import DropDown
-
-
-
-protocol LanguageSelectionDelegate {
-    
-   
-    // Comunicate delegates that a country has been selected
-    //
-    //   - Parameters:
-    //   - settingsViewController: settingsViewController
-    //   - language: selected language
-    func settingsViewController(_ MyProfileController: MyProfileController, didSelectLanguage language: Language)
-   
-}
-
+import EzPopup
 
 
 struct MyProfileData {
@@ -75,11 +61,11 @@ class MyProfileController: UIViewController,UIImagePickerControllerDelegate,UINa
     
     @IBOutlet weak var myProfileTableView: UITableView!
     
+    @IBOutlet weak var dropBtn: UIButton!
     var profileHeaderView:NSMutableArray = [""]
     var singUpButtonView:NSMutableArray = [""]
     let dropDown = DropDown()
-    let languages = LanguagesChange.languages
-    var delegate : LanguageSelectionDelegate?
+    
     /* // add this if client said to show it in befor login data
      MyProfileData(title: "notification".localized, image: UIImage(named: "ic_notificationprofile")!),
      MyProfileData(title: "searchterms".localized, image: UIImage(named: "ic_notificationprofile")!),
@@ -90,24 +76,24 @@ class MyProfileController: UIViewController,UIImagePickerControllerDelegate,UINa
     
     //User-Customer
     var userDataBeforLogin:NSMutableArray = [
-        MyProfileData(title: "Contact Us".localized, image: UIImage(named: "contact")!),
-        MyProfileData(title: "Change App Language".localized, image: UIImage(named: "language")!)
+        MyProfileData(title: "Contact Us".localizedStr(), image: UIImage(named: "contact")!),
+        MyProfileData(title: "Change App Language".localizedStr(), image: UIImage(named: "language")!)
     ]
     
     var userDataAfterLogin:NSMutableArray = [
-        MyProfileData(title: "notification".localized, image: UIImage(named: "notification")!),
-        MyProfileData(title: "Social Center", image: UIImage(named: "social_chat")!),
-        MyProfileData(title: "myorder".localized, image: UIImage(named: "my-order")!),
-        MyProfileData(title: "mywishlist".localized, image: UIImage(named: "mywishlist")!),
-        MyProfileData(title: "myproductreviews".localized, image: UIImage(named: "product-review")!),
-        MyProfileData(title: "accountinformation".localized, image: UIImage(named: "account-information")!),
-        MyProfileData(title: "addressbook".localized, image: UIImage(named: "address-book")!),
-        MyProfileData(title: "searchterms".localized, image: UIImage(named: "search-term")!),
-        MyProfileData(title: "advancesearchterms".localized, image: UIImage(named: "advance-search")!),
-        MyProfileData(title: "comparelist".localized, image: UIImage(named: "compare-product")!),
-        MyProfileData(title: "Contact Us".localized, image: UIImage(named: "contact")!),
-        MyProfileData(title: "Change App Language".localized, image: UIImage(named: "language")!),
-        MyProfileData(title: "Download Merchant App".localized, image: UIImage(named: "app-store")!)]
+        MyProfileData(title: "notification".localizedStr(), image: UIImage(named: "notification")!),
+        MyProfileData(title: "Social Center".localizedStr(), image: UIImage(named: "social_chat")!),
+        MyProfileData(title: "myorder".localizedStr(), image: UIImage(named: "my-order")!),
+        MyProfileData(title: "mywishlist".localizedStr(), image: UIImage(named: "mywishlist")!),
+        MyProfileData(title: "myproductreviews".localizedStr(), image: UIImage(named: "product-review")!),
+        MyProfileData(title: "accountinformation".localizedStr(), image: UIImage(named: "account-information")!),
+        MyProfileData(title: "addressbook".localizedStr(), image: UIImage(named: "address-book")!),
+        MyProfileData(title: "searchterms".localizedStr(), image: UIImage(named: "search-term")!),
+        MyProfileData(title: "advancesearchterms".localizedStr(), image: UIImage(named: "advance-search")!),
+        MyProfileData(title: "comparelist".localizedStr(), image: UIImage(named: "compare-product")!),
+        MyProfileData(title: "Contact Us".localizedStr(), image: UIImage(named: "contact")!),
+        MyProfileData(title: "Change App Language".localizedStr(), image: UIImage(named: "language")!),
+        MyProfileData(title: "Download Merchant App".localizedStr(), image: UIImage(named: "app-store")!)]
     
     //Seller
     var approvedSellerDataAsAdmin:NSMutableArray = []
@@ -137,7 +123,9 @@ class MyProfileController: UIViewController,UIImagePickerControllerDelegate,UINa
 //        self.title = "My Profile"
         
         myProfileTableView.register(UINib(nibName: "ProfileTableViewCell", bundle: nil), forCellReuseIdentifier: "ProfileTableViewCell")
+        
         myProfileTableView.register(UINib(nibName: "ProfileCell", bundle: nil), forCellReuseIdentifier: "ProfileCell")
+        
         myProfileTableView.register(UINib(nibName: "LoginButtonTableViewCell", bundle: nil), forCellReuseIdentifier: "LoginButtonTableViewCell")
         
         myProfileTableView.rowHeight = UITableViewAutomaticDimension
@@ -615,17 +603,32 @@ class MyProfileController: UIViewController,UIImagePickerControllerDelegate,UINa
                 AlertManager.shared.showInfoSnackBar(msg:"App is not available in app store. please wait...")
             }
         
-        else if screenName == "Change App Language" {            
-            print("Hello")
-           
+        else if screenName == "Change App Language" {
+            goToSaveCurrentScanView()
         }
-        
     }
     
     
+
+    func goToSaveCurrentScanView() {
+       
+        let vc = AppStoryboard.Main.instance.instantiateViewController(withIdentifier: "languageViewController") as! languageViewController
+        
+      //  if UIDevice.current.orientation.isLandscape {
+            let popupVC = PopupViewController(contentController: vc,position: .bottom(200),popupWidth: 300, popupHeight: 230)
+            popupVC.cornerRadius  = 12
+            popupVC.backgroundColor = .gray
+            present(popupVC, animated: true, completion: nil)
+            
+//        } else {
+//            let popupVC = PopupViewController(contentController: languageViewController,position: .bottom(160),popupWidth: 300, popupHeight: 280)
+//            popupVC.cornerRadius  = 12
+//            popupVC.backgroundColor = .gray
+//            present(popupVC, animated: true, completion: nil)
+//        }
+    }
     
- 
-    
+   
     
     
     
@@ -1034,3 +1037,6 @@ extension MyProfileController : LoginButtonHandlerDelegate {
     }
     
 }
+
+
+
