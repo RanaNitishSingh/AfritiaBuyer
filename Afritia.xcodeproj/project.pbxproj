@@ -216,10 +216,15 @@
 		35DF7E1723E9AAB700E8C0C1 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DF7E1623E9AAB600E8C0C1 /* MyTextField.swift */; };
 		35DF7E2023E9B4FB00E8C0C1 /* AssighnImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DF7E1E23E9B4FB00E8C0C1 /* AssighnImageCollectionViewCell.xib */; };
 		35DF7E2123E9B4FB00E8C0C1 /* AssighnImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DF7E1F23E9B4FB00E8C0C1 /* AssighnImageCollectionViewCell.swift */; };
-		5226DC85287C3CDE002160FF /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226DC82287C3CDD002160FF /* Language.swift */; };
-		5226DC86287C3CDE002160FF /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226DC83287C3CDE002160FF /* Languages.swift */; };
-		5226DC87287C3CDE002160FF /* RKLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226DC84287C3CDE002160FF /* RKLocalization.swift */; };
 		528959A72878436C00CB58CC /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528959A62878436C00CB58CC /* Alert.swift */; };
+		5297687B287D49CA00E67EE1 /* languageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297687A287D49CA00E67EE1 /* languageViewController.swift */; };
+		529768AD287D5EDF00E67EE1 /* localizationStr.strings in Resources */ = {isa = PBXBuildFile; fileRef = 529768A2287D5EDF00E67EE1 /* localizationStr.strings */; };
+		529768AE287D5EDF00E67EE1 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529768A5287D5EDF00E67EE1 /* LocalizationSystem.swift */; };
+		529768AF287D5EDF00E67EE1 /* MirroringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529768A7287D5EDF00E67EE1 /* MirroringLabel.swift */; };
+		529768B0287D5EDF00E67EE1 /* MirroringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529768A8287D5EDF00E67EE1 /* MirroringViewController.swift */; };
+		529768B1287D5EDF00E67EE1 /* L012Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529768A9287D5EDF00E67EE1 /* L012Localizer.swift */; };
+		529768B2287D5EDF00E67EE1 /* L102Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529768AA287D5EDF00E67EE1 /* L102Language.swift */; };
+		529768B3287D5EDF00E67EE1 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529768AB287D5EDF00E67EE1 /* BundleExtension.swift */; };
 		529E8EB4287C56DA00EA0CAA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 529E8EB3287C56DA00EA0CAA /* Realm */; };
 		529E8EB6287C56DA00EA0CAA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 529E8EB5287C56DA00EA0CAA /* RealmSwift */; };
 		6991832D4C3F02CBA54D1A70 /* Pods_Afritia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7808EBE55C1D8CBA249834AE /* Pods_Afritia.framework */; };
@@ -655,10 +660,20 @@
 		35DF7E1623E9AAB600E8C0C1 /* MyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 		35DF7E1E23E9B4FB00E8C0C1 /* AssighnImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssighnImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		35DF7E1F23E9B4FB00E8C0C1 /* AssighnImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssighnImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		5226DC82287C3CDD002160FF /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
-		5226DC83287C3CDE002160FF /* Languages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
-		5226DC84287C3CDE002160FF /* RKLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKLocalization.swift; sourceTree = "<group>"; };
 		528959A62878436C00CB58CC /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		5297687A287D49CA00E67EE1 /* languageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = languageViewController.swift; sourceTree = "<group>"; };
+		529768A3287D5EDF00E67EE1 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/localizationStr.strings; sourceTree = "<group>"; };
+		529768A4287D5EDF00E67EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/localizationStr.strings; sourceTree = "<group>"; };
+		529768A5287D5EDF00E67EE1 /* LocalizationSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
+		529768A7287D5EDF00E67EE1 /* MirroringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirroringLabel.swift; sourceTree = "<group>"; };
+		529768A8287D5EDF00E67EE1 /* MirroringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirroringViewController.swift; sourceTree = "<group>"; };
+		529768A9287D5EDF00E67EE1 /* L012Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L012Localizer.swift; sourceTree = "<group>"; };
+		529768AA287D5EDF00E67EE1 /* L102Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Language.swift; sourceTree = "<group>"; };
+		529768AB287D5EDF00E67EE1 /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		529768C4287D78FC00E67EE1 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/localizationStr.strings; sourceTree = "<group>"; };
+		529768C5287D78FC00E67EE1 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
+		529768C6287D791300E67EE1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/localizationStr.strings; sourceTree = "<group>"; };
+		529768C7287D791300E67EE1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7808EBE55C1D8CBA249834AE /* Pods_Afritia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Afritia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873FF97EF2A7E50D7CE44303 /* Pods-Afritia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Afritia.debug.xcconfig"; path = "Target Support Files/Pods-Afritia/Pods-Afritia.debug.xcconfig"; sourceTree = "<group>"; };
 		A3079E8E21F869B200403B69 /* bubbleMine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubbleMine@2x.png"; sourceTree = "<group>"; };
@@ -1586,9 +1601,8 @@
 		5226DC80287C3CCD002160FF /* zeroit */ = {
 			isa = PBXGroup;
 			children = (
-				5226DC82287C3CDD002160FF /* Language.swift */,
-				5226DC83287C3CDE002160FF /* Languages.swift */,
-				5226DC84287C3CDE002160FF /* RKLocalization.swift */,
+				529768A1287D5EDF00E67EE1 /* localization */,
+				5297687A287D49CA00E67EE1 /* languageViewController.swift */,
 			);
 			path = zeroit;
 			sourceTree = "<group>";
@@ -1599,6 +1613,28 @@
 				528959A62878436C00CB58CC /* Alert.swift */,
 			);
 			path = Singelton;
+			sourceTree = "<group>";
+		};
+		529768A1287D5EDF00E67EE1 /* localization */ = {
+			isa = PBXGroup;
+			children = (
+				529768A2287D5EDF00E67EE1 /* localizationStr.strings */,
+				529768A5287D5EDF00E67EE1 /* LocalizationSystem.swift */,
+				529768A6287D5EDF00E67EE1 /* localisation */,
+				529768AB287D5EDF00E67EE1 /* BundleExtension.swift */,
+			);
+			path = localization;
+			sourceTree = "<group>";
+		};
+		529768A6287D5EDF00E67EE1 /* localisation */ = {
+			isa = PBXGroup;
+			children = (
+				529768A7287D5EDF00E67EE1 /* MirroringLabel.swift */,
+				529768A8287D5EDF00E67EE1 /* MirroringViewController.swift */,
+				529768A9287D5EDF00E67EE1 /* L012Localizer.swift */,
+				529768AA287D5EDF00E67EE1 /* L102Language.swift */,
+			);
+			path = localisation;
 			sourceTree = "<group>";
 		};
 		A32075F9222A6E3E00ADBFED /* Invoice */ = {
@@ -1790,7 +1826,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = kunal;
 				TargetAttributes = {
 					0C056E4B20401B1000EB527B = {
@@ -1819,6 +1855,8 @@
 				en,
 				Base,
 				ar,
+				zh,
+				es,
 			);
 			mainGroup = 0C056E4320401B1000EB527B;
 			packageReferences = (
@@ -1868,6 +1906,7 @@
 				EC9CD99420406B02008F44DB /* BannerTableViewCell.xib in Resources */,
 				14CB72D620F618A100357D28 /* LabelCell.xib in Resources */,
 				076B0DB525872BA300427B1B /* SellerItemsTableViewCell.xib in Resources */,
+				529768AD287D5EDF00E67EE1 /* localizationStr.strings in Resources */,
 				0C056FDC20401EF200EB527B /* ic_eye_open@3x.png in Resources */,
 				A30BB3802184860D000C54BE /* SubCategoryTableViewCell.xib in Resources */,
 				0CE7CAF42046907400D539AC /* ViewAllCell.xib in Resources */,
@@ -2172,6 +2211,7 @@
 				07C5704D2591D85A002B8B77 /* AFNavigationBarView.swift in Sources */,
 				EC9CD9DA20406BA5008F44DB /* AddEditAddress.swift in Sources */,
 				0C056EC720401D4900EB527B /* MyProductReviews.swift in Sources */,
+				529768B2287D5EDF00E67EE1 /* L102Language.swift in Sources */,
 				A3207615222A6E4000ADBFED /* InvoiceViewController.swift in Sources */,
 				0C056FDE20401EF200EB527B /* Style.swift in Sources */,
 				EC9CDA1E20406C1E008F44DB /* CatalogProductImage.swift in Sources */,
@@ -2184,6 +2224,7 @@
 				35DF7E2123E9B4FB00E8C0C1 /* AssighnImageCollectionViewCell.swift in Sources */,
 				EC9CD9C720406B88008F44DB /* StoreViewController.swift in Sources */,
 				0C056F4220401E5E00EB527B /* FilteredTableViewCell.swift in Sources */,
+				529768B0287D5EDF00E67EE1 /* MirroringViewController.swift in Sources */,
 				0C056FF820401EF200EB527B /* CHIPageControlJalapeno.swift in Sources */,
 				A320761F222A6E4000ADBFED /* TrackingWebInfoViewController.swift in Sources */,
 				076B0DD825872BA300427B1B /* SellerContactTableViewCell.swift in Sources */,
@@ -2199,13 +2240,13 @@
 				A3606F9720FB5D1F0003BD54 /* PastelPoint.swift in Sources */,
 				EC9CDA4F20406C86008F44DB /* OrderReviewModel.swift in Sources */,
 				0C05700420401EF200EB527B /* HCSStarRatingView.m in Sources */,
-				5226DC87287C3CDE002160FF /* RKLocalization.swift in Sources */,
 				0C056FFD20401EF200EB527B /* BlueIndicatorStyle.swift in Sources */,
 				0CFFB6ED20AAC83D00C65E94 /* SwiftyJSON.swift in Sources */,
 				EC9CDA2120406C1E008F44DB /* ProductDescription.swift in Sources */,
 				076B0DDF25872BA300427B1B /* ContactUs.swift in Sources */,
 				A320761C222A6E4000ADBFED /* OrderShipmentsViewController.swift in Sources */,
 				0C298226206CA8CD00424776 /* GradientView.swift in Sources */,
+				529768B1287D5EDF00E67EE1 /* L012Localizer.swift in Sources */,
 				0C056FDF20401EF200EB527B /* CHIPageControlChimayo.swift in Sources */,
 				EC9CDA2020406C1E008F44DB /* CatalogProductModel.swift in Sources */,
 				0C056FF920401EF200EB527B /* BaseWindow.swift in Sources */,
@@ -2214,6 +2255,7 @@
 				0C056FF620401EF200EB527B /* GradientArcView.swift in Sources */,
 				A3207617222A6E4000ADBFED /* TrackingInfoTableViewCell.swift in Sources */,
 				076B0DD325872BA300427B1B /* SellerRatingViewCell.swift in Sources */,
+				529768AE287D5EDF00E67EE1 /* LocalizationSystem.swift in Sources */,
 				0C1C36CE20E0F2EF00CF58AD /* CustomFooterView.swift in Sources */,
 				A39D5FAD20AADCB900DF4BE5 /* ProductModel.swift in Sources */,
 				0C056FEF20401EF200EB527B /* Background.swift in Sources */,
@@ -2254,6 +2296,7 @@
 				A3836A1721F755FA0087F069 /* PHFComposeBarView_Button.m in Sources */,
 				EC9CD9E620406BC8008F44DB /* MyOrders.swift in Sources */,
 				EC9CD9D620406B98008F44DB /* AddressViewCell.swift in Sources */,
+				5297687B287D49CA00E67EE1 /* languageViewController.swift in Sources */,
 				0C056FE420401EF200EB527B /* ProgressView.swift in Sources */,
 				EC9CD99C20406B02008F44DB /* CategoryCell.swift in Sources */,
 				EC9CD9BC20406B6D008F44DB /* CategoriesTableViewCell.swift in Sources */,
@@ -2265,6 +2308,7 @@
 				EC9CD9C520406B88008F44DB /* AccountInformation.swift in Sources */,
 				EC9CDA0F20406C02008F44DB /* NotificationModel.swift in Sources */,
 				07E789C4251E23BC00CD9321 /* AppEnums.swift in Sources */,
+				529768AF287D5EDF00E67EE1 /* MirroringLabel.swift in Sources */,
 				EC9CDA3320406C50008F44DB /* CompareProductAttributeValueCollectionView.swift in Sources */,
 				A34EA5E2219C3FB6009F0B86 /* ArContainerViewController.swift in Sources */,
 				EC9CD9AC20406B30008F44DB /* ProductCollectionModel.swift in Sources */,
@@ -2330,7 +2374,6 @@
 				EC9CDA3120406C50008F44DB /* CompareListViewController.swift in Sources */,
 				0C056FFA20401EF200EB527B /* CHILayer.swift in Sources */,
 				0C056FDA20401EF200EB527B /* CHIPageControllable.swift in Sources */,
-				5226DC85287C3CDE002160FF /* Language.swift in Sources */,
 				0756219D2530645500AB6354 /* UITableViewExtension.swift in Sources */,
 				528959A72878436C00CB58CC /* Alert.swift in Sources */,
 				A3606F9520FB5D1F0003BD54 /* PastelGradient.swift in Sources */,
@@ -2368,6 +2411,7 @@
 				EC9CDA5920406C86008F44DB /* ContinueToBillTableViewCell.swift in Sources */,
 				0C056EA720401CE400EB527B /* CatalogProductReviewTableViewCell.swift in Sources */,
 				0C056FD920401EF200EB527B /* CircularProgressView.swift in Sources */,
+				529768B3287D5EDF00E67EE1 /* BundleExtension.swift in Sources */,
 				076B0DAC25872BA300427B1B /* SellerShipmentTableViewCell.swift in Sources */,
 				A320761E222A6E4000ADBFED /* TrackAllTableViewCell.swift in Sources */,
 				0C496A0E2057C3580073AF48 /* CMSPageData.swift in Sources */,
@@ -2390,7 +2434,6 @@
 				EC9CD9D320406B98008F44DB /* AddreessViewCell2.swift in Sources */,
 				A30BB37F2184860D000C54BE /* SubCategoryTableViewCell.swift in Sources */,
 				076B0DD725872BA300427B1B /* SellerDetailsViewController.swift in Sources */,
-				5226DC86287C3CDE002160FF /* Languages.swift in Sources */,
 				A3606F9820FB5D1F0003BD54 /* PastelView.swift in Sources */,
 				076B0DAD25872BA300427B1B /* SellerOrderDetailsController.swift in Sources */,
 				A39D5FB320AAEB7E00DF4BE5 /* RecentViewTableViewCell.swift in Sources */,
@@ -2425,8 +2468,21 @@
 				0C056E6720401C7D00EB527B /* en */,
 				0C056E6920401C8000EB527B /* Base */,
 				0C2793202105A9B900CCEAA0 /* ar */,
+				529768C5287D78FC00E67EE1 /* zh */,
+				529768C7287D791300E67EE1 /* es */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		529768A2287D5EDF00E67EE1 /* localizationStr.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529768A3287D5EDF00E67EE1 /* ar */,
+				529768A4287D5EDF00E67EE1 /* en */,
+				529768C4287D78FC00E67EE1 /* zh */,
+				529768C6287D791300E67EE1 /* es */,
+			);
+			name = localizationStr.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2447,6 +2503,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -2454,8 +2511,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2481,7 +2540,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2505,6 +2564,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -2512,8 +2572,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2533,7 +2595,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -2562,7 +2624,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Afritia/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2571,7 +2633,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zero.it.afritia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -2599,7 +2660,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Afritia/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
